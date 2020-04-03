@@ -16,4 +16,13 @@ export class SimpleNiceMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  hidden(item: MenuItem) {
+    return item && typeof item.hidden === 'function' ? item.hidden() : false;
+  }
+
+  handle(item: MenuItem) {
+    this.opened = false;
+    return item && typeof item.handle === 'function' ? item.handle() : undefined;
+  }
+
 }
