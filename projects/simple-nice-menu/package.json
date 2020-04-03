@@ -1,6 +1,31 @@
 {
   "name": "ngx-simple-nice-menu",
   "version": "9.1.0",
+  "description": "Create simple fixed menu..",
+  "author": {
+    "name": "freeintelligence",
+    "email": "free04381@gmail.com"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeintelligence/ngx-simple-nice-menu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/freeintelligence/ngx-simple-nice-menu/issues"
+  },
+  "homepage": "https://github.com/freeintelligence/ngx-simple-nice-menu#readme",
+  "keywords": [
+    "angular",
+    "angular9",
+    "ng",
+    "ngx",
+    "universal",
+    "simple",
+    "nice",
+    "menu",
+    "items"
+  ],
   "peerDependencies": {
     "@angular/common": "^9.1.0",
     "@angular/core": "^9.1.0",
