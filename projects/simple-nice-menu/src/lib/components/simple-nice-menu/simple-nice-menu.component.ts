@@ -2,13 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'simple-nice-menu-simple-nice-menu',
-  template: `
-    <p>
-      simple-nice-menu works!
-    </p>
-  `,
-  styles: [
-  ],
+  templateUrl: './simple-nice-menu.component.html',
+  styleUrls: ['./simple-nice-menu.component.scss']
 })
 export class SimpleNiceMenuComponent implements OnInit {
 
