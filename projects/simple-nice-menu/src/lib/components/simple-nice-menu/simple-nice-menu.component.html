@@ -8,7 +8,7 @@
   <div class="toggle-separator"></div>
 
   <div class="all-items-simple-menu">
-    <div *ngFor="let item of items" class="item-simple-menu">
+    <div *ngFor="let item of items" class="item-simple-menu" (click)="opened = false">
       <a *ngIf="!item.externalUrl" [routerLink]="item.url">{{ item.text }}</a>
       <a *ngIf="item.externalUrl" target="__blank" [href]="item.url">{{ item.text }}</a>
     </div>
