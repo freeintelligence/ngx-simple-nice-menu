@@ -14,7 +14,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "simple-nice-menu": [
+        "dist/simple-nice-menu/simple-nice-menu",
+        "dist/simple-nice-menu"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
