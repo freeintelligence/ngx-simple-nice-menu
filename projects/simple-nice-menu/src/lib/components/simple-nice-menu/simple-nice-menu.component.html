@@ -1,1 +1,16 @@
-<p>simple-nice-menu works!</p>
+<div class="simple-nice-menu-toggle-icon" (click)="opened = !opened">
+  <button mat-fab color="accent">
+    <mat-icon>{{ opened ? 'close' : 'menu' }}</mat-icon>
+  </button>
+</div>
+
+<div class="simple-nice-menu-toggle-container" [class.opened]="opened">
+  <div class="toggle-separator"></div>
+
+  <div class="all-items-simple-menu">
+    <div *ngFor="let item of items" class="item-simple-menu">
+      <a *ngIf="!item.externalUrl" [routerLink]="item.url">{{ item.text }}</a>
+      <a *ngIf="item.externalUrl" target="__blank" [href]="item.url">{{ item.text }}</a>
+    </div>
+  </div>
+</div>
