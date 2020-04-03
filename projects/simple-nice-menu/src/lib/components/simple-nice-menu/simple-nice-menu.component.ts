@@ -8,14 +8,8 @@ import { MenuItem } from '../../interfaces/menu-item.interface';
 })
 export class SimpleNiceMenuComponent implements OnInit {
 
-  @Input('items') items: MenuItem[] = [
-    { url: '/', text: 'Tus canciones personalizadas' },
-    { url: '/website/availables', text: 'Lista de nombres' },
-    { url: '/website/our-history', text: 'Nuestra historia' },
-    { url: 'http://www.poronponpon.com', text: 'Blog', externalUrl: true },
-  ];
-  
-  opened: boolean = false;
+  @Input('items') items: MenuItem[] = [];
+  @Input('opened') opened: boolean = false;
 
   constructor() { }
 
